@@ -145,6 +145,12 @@ button:active {
     margin: 0 auto;
 }
 
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*HIGHLIGHTS*/
 
 #highlights {
@@ -220,6 +226,7 @@ button:active {
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
@@ -230,7 +237,7 @@ button:active {
 .book__img {
     max-height: 380px;
     transition: all 300ms;
-    cursor: no-drop;
+    cursor: not-allowed;
 }
 
 .book__img--wrapper {
@@ -251,5 +258,25 @@ button:active {
 
 .book__title:hover {
     text-decoration: underline;
-    cursor: no-drop;
+    cursor: not-allowed;
 }
+
+.book__ratings {
+    margin-bottom: 8px;
+    color: #fabf2a;
+}
+
+.book__price--normal {
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: #bfbfbf;
+}
+
+/*EXPLORE MORE BOOKS*/
+
+#explore {
+    background-color: rgb(115, 66, 214, 0.1);;
+}
+
+/*FOOTER*/ 
+
